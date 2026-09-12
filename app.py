@@ -16,20 +16,20 @@ st.markdown(
     padding-top: 3rem !important;
 }
     p {
-        font-size: 22px !important;
+        font-size: 18px !important;
     }
 
     [data-testid="stFileUploader"] label {
-        font-size: 22px !important;
+        font-size: 18px !important;
     }
 
     .stButton button {
-        font-size: 20px !important;
-        padding: 10px 24px;
+        font-size: 16px !important;
+        padding: 8px 18px;
     }
 
     [data-testid="stAlert"] p {
-        font-size: 20px !important;
+        font-size: 16px !important;
     }
     </style>
     """,

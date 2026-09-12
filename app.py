@@ -1,10 +1,39 @@
-﻿import streamlit as st
+import streamlit as st
 from PIL import Image
 
 # Configure the browser page
 st.set_page_config(
     page_title="FruitLens",
     page_icon="🍎"
+)
+
+# Increase font sizes
+st.markdown(
+    """
+    <style>
+
+    [data-testid="stMainBlockContainer"] {
+    padding-top: 3rem !important;
+}
+    p {
+        font-size: 22px !important;
+    }
+
+    [data-testid="stFileUploader"] label {
+        font-size: 22px !important;
+    }
+
+    .stButton button {
+        font-size: 20px !important;
+        padding: 10px 24px;
+    }
+
+    [data-testid="stAlert"] p {
+        font-size: 20px !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
 )
 
 # Application heading
@@ -25,7 +54,7 @@ if uploaded_file is not None:
     st.image(
         image,
         caption="Uploaded image",
-        width="stretch"
+        width=250
     )
 
     # The CNN model will be connected here later

@@ -54,7 +54,7 @@ if uploaded_file is not None:
     st.image(
         image,
         caption="Uploaded image",
-        width=250
+        width=180
     )
 
     # The CNN model will be connected here later
